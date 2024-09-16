@@ -12,8 +12,8 @@ importers:
         specifier: 17.7.1
         version: 17.7.1
       '@commitlint/config-conventional':
-        specifier: 19.2.2
-        version: 19.2.2
+        specifier: 19.5.0
+        version: 19.5.0
       '@monkeytype/release':
         specifier: workspace:*
         version: link:packages/release
@@ -1160,8 +1160,8 @@ packages:
     engines: {node: '>=v14'}
     hasBin: true
 
-  '@commitlint/config-conventional@19.2.2':
-    resolution: {integrity: sha512-mLXjsxUVLYEGgzbxbxicGPggDuyWNkf25Ht23owXIH+zV2pv1eJuzLK3t1gDY5Gp6pxdE60jZnWUY5cvgL3ufw==}
+  '@commitlint/config-conventional@19.5.0':
+    resolution: {integrity: sha512-OBhdtJyHNPryZKg0fFpZNOBM1ZDbntMvqMuSmpfyP86XSfwzGw4CaoYRG4RutUPg0BTK07VMRIkNJT6wi2zthg==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@17.8.1':
@@ -10488,7 +10488,7 @@ snapshots:
       - '@swc/core'
       - '@swc/wasm'
 
-  '@commitlint/config-conventional@19.2.2':
+  '@commitlint/config-conventional@19.5.0':
     dependencies:
       '@commitlint/types': 19.5.0
       conventional-changelog-conventionalcommits: 7.0.2
@@ -12030,7 +12030,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 22.5.4
+      '@types/node': 20.14.11
 
   '@types/cookiejar@2.1.5': {}
 
@@ -12118,6 +12118,7 @@ snapshots:
   '@types/node@22.5.4':
     dependencies:
       undici-types: 6.19.8
+    optional: true
 
   '@types/nodemailer@6.4.15':
     dependencies:
@@ -19723,7 +19724,8 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici-types@6.19.8: {}
+  undici-types@6.19.8:
+    optional: true
 
   undici@5.28.4:
     dependencies:
