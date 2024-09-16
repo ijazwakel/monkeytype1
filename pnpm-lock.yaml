@@ -238,8 +238,8 @@ importers:
         specifier: 7.4.0
         version: 7.4.0(ioredis@4.28.5)
       openapi3-ts:
-        specifier: 2.0.2
-        version: 2.0.2
+        specifier: 4.4.0
+        version: 4.4.0
       readline-sync:
         specifier: 1.4.10
         version: 1.4.10
@@ -7147,6 +7147,9 @@ packages:
 
   openapi3-ts@3.2.0:
     resolution: {integrity: sha512-/ykNWRV5Qs0Nwq7Pc0nJ78fgILvOT/60OxEmB3v7yQ8a8Bwcm43D4diaYazG/KBn6czA+52XYy931WFLMCUeSg==}
+
+  openapi3-ts@4.4.0:
+    resolution: {integrity: sha512-9asTNB9IkKEzWMcHmVZE7Ts3kC9G7AFHfs8i7caD8HbI76gEjdkId4z/AkP83xdZsH7PLAnnbl47qZkXuxpArw==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -17658,7 +17661,11 @@ snapshots:
 
   openapi3-ts@3.2.0:
     dependencies:
-      yaml: 2.5.0
+      yaml: 2.5.1
+
+  openapi3-ts@4.4.0:
+    dependencies:
+      yaml: 2.5.1
 
   optionator@0.9.4:
     dependencies:
