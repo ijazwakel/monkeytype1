@@ -404,8 +404,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       gulp-eslint-new:
-        specifier: 1.9.1
-        version: 1.9.1
+        specifier: 2.3.0
+        version: 2.3.0
       happy-dom:
         specifier: 13.4.1
         version: 13.4.1
@@ -2649,8 +2649,8 @@ packages:
   '@types/damerau-levenshtein@1.0.0':
     resolution: {integrity: sha512-8XQ1jJHlOl6HjZ3/fU9Yrm/14jxM4gXVezPWiwkyiG0GnYROsI6wdh8DwKccAFGDNiNYBooTZkRXVe4du6plKA==}
 
-  '@types/eslint@8.56.11':
-    resolution: {integrity: sha512-sVBpJMf7UPo/wGecYOpk2aQya2VUGeHhe38WG7/mN5FufNSubf5VT9Uh9Uyp8/eLJpu1/tuhJ/qTo4mhSB4V4Q==}
+  '@types/eslint@9.6.1':
+    resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
 
   '@types/estree@0.0.39':
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
@@ -5253,8 +5253,8 @@ packages:
     engines: {node: '>= 0.10'}
     hasBin: true
 
-  gulp-eslint-new@1.9.1:
-    resolution: {integrity: sha512-ohcH/DJdLPNAq76SxZux2Ptah515Cvinnfze30yj19VoCqgsT6VH3BdNfll8XJGB8BLz1YWipZ5i45dxrNOk3w==}
+  gulp-eslint-new@2.3.0:
+    resolution: {integrity: sha512-3NFqJRytt4BpmvrBAlPJSL5CyQtUt4zZ8nUJec2ohJo8CRaXhdrYNPRTfN4uO6hHRMWCIVnGnp23o+B0kLjwRg==}
     engines: {node: ^12.20 || ^14.13 || >=16}
 
   gulp@4.0.2:
@@ -12030,7 +12030,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 22.5.4
+      '@types/node': 20.14.11
 
   '@types/cookiejar@2.1.5': {}
 
@@ -12043,7 +12043,7 @@ snapshots:
 
   '@types/damerau-levenshtein@1.0.0': {}
 
-  '@types/eslint@8.56.11':
+  '@types/eslint@9.6.1':
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
@@ -12118,6 +12118,7 @@ snapshots:
   '@types/node@22.5.4':
     dependencies:
       undici-types: 6.19.8
+    optional: true
 
   '@types/nodemailer@6.4.15':
     dependencies:
@@ -15490,9 +15491,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gulp-eslint-new@1.9.1:
+  gulp-eslint-new@2.3.0:
     dependencies:
-      '@types/eslint': 8.56.11
+      '@types/eslint': 9.6.1
       '@types/node': 20.14.11
       eslint: 8.57.0
       fancy-log: 2.0.0
@@ -19723,7 +19724,8 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici-types@6.19.8: {}
+  undici-types@6.19.8:
+    optional: true
 
   undici@5.28.4:
     dependencies:
