@@ -78,8 +78,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       date-fns:
-        specifier: 3.6.0
-        version: 3.6.0
+        specifier: 4.1.0
+        version: 4.1.0
       dotenv:
         specifier: 16.4.5
         version: 16.4.5
@@ -281,7 +281,7 @@ importers:
         version: 3.7.1
       chartjs-adapter-date-fns:
         specifier: 3.0.0
-        version: 3.0.0(chart.js@3.7.1)(date-fns@3.6.0)
+        version: 3.0.0(chart.js@3.7.1)(date-fns@4.1.0)
       chartjs-plugin-annotation:
         specifier: 2.2.1
         version: 2.2.1(chart.js@3.7.1)
@@ -295,8 +295,8 @@ importers:
         specifier: 1.0.8
         version: 1.0.8
       date-fns:
-        specifier: 3.6.0
-        version: 3.6.0
+        specifier: 4.1.0
+        version: 4.1.0
       firebase:
         specifier: 10.12.4
         version: 10.12.4
@@ -4050,8 +4050,8 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
 
-  date-fns@3.6.0:
-    resolution: {integrity: sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==}
+  date-fns@4.1.0:
+    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -4595,6 +4595,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esniff@2.0.1:
@@ -5017,7 +5018,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -13137,10 +13138,10 @@ snapshots:
 
   chart.js@3.7.1: {}
 
-  chartjs-adapter-date-fns@3.0.0(chart.js@3.7.1)(date-fns@3.6.0):
+  chartjs-adapter-date-fns@3.0.0(chart.js@3.7.1)(date-fns@4.1.0):
     dependencies:
       chart.js: 3.7.1
-      date-fns: 3.6.0
+      date-fns: 4.1.0
 
   chartjs-plugin-annotation@2.2.1(chart.js@3.7.1):
     dependencies:
@@ -13705,7 +13706,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.25.0
 
-  date-fns@3.6.0: {}
+  date-fns@4.1.0: {}
 
   debug@2.6.9:
     dependencies:
