@@ -328,8 +328,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       slim-select:
-        specifier: 2.8.1
-        version: 2.8.1
+        specifier: 2.10.0
+        version: 2.10.0
       stemmer:
         specifier: 2.0.1
         version: 2.0.1
@@ -4595,6 +4595,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esniff@2.0.1:
@@ -5017,7 +5018,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -8238,8 +8239,8 @@ packages:
   slick@1.12.2:
     resolution: {integrity: sha512-4qdtOGcBjral6YIBCWJ0ljFSKNLz9KkhbWtuGvUyRowl1kxfuE1x/Z/aJcaiilpb3do9bl5K7/1h9XC5wWpY/A==}
 
-  slim-select@2.8.1:
-    resolution: {integrity: sha512-/wi+4dau48edrPZ/ggD+R8qD6FbCLGv5zvrYh4rqp1RNEIbkb1pRYJbljLjvr7/QqBvX3Hjbnvdnw9FPzJ8o5Q==}
+  slim-select@2.10.0:
+    resolution: {integrity: sha512-sOKXH8YlgspTn+wy1jYbscVlFbBsAIOmtrmx1e16sV+NbYDTIyJCCdLH0EL9gDxDdHzBgE/s5XZ+VChaxz0JGg==}
 
   slugify@1.4.7:
     resolution: {integrity: sha512-tf+h5W1IrjNm/9rKKj0JU2MDMruiopx0jjVA5zCdBtcGjfp0+c5rHw/zADLC3IeKlGHtVbHtpfzvYA0OYT+HKg==}
@@ -18889,10 +18890,7 @@ snapshots:
 
   slick@1.12.2: {}
 
-  slim-select@2.8.1:
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+  slim-select@2.10.0: {}
 
   slugify@1.4.7: {}
 
