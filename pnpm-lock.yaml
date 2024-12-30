@@ -96,8 +96,8 @@ importers:
         specifier: 4.6.0
         version: 4.6.0
       ioredis:
-        specifier: 4.28.5
-        version: 4.28.5
+        specifier: 5.4.2
+        version: 5.4.2
       joi:
         specifier: 17.6.0
         version: 17.6.0
@@ -181,8 +181,8 @@ importers:
         specifier: 4.17.21
         version: 4.17.21
       '@types/ioredis':
-        specifier: 4.28.10
-        version: 4.28.10
+        specifier: 5.0.0
+        version: 5.0.0
       '@types/lodash':
         specifier: 4.14.178
         version: 4.14.178
@@ -236,7 +236,7 @@ importers:
         version: 8.0.0(eslint@8.57.0)
       ioredis-mock:
         specifier: 7.4.0
-        version: 7.4.0(ioredis@4.28.5)
+        version: 7.4.0(ioredis@5.4.2)
       openapi3-ts:
         specifier: 2.0.2
         version: 2.0.2
@@ -2670,8 +2670,9 @@ packages:
   '@types/http-errors@2.0.4':
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
 
-  '@types/ioredis@4.28.10':
-    resolution: {integrity: sha512-69LyhUgrXdgcNDv7ogs1qXZomnfOEnSmrmMFqKgt1XMJxmoOSG/u3wYy13yACIfKuMJ8IhKgHafDO3sx19zVQQ==}
+  '@types/ioredis@5.0.0':
+    resolution: {integrity: sha512-zJbJ3FVE17CNl5KXzdeSPtdltc4tMT3TzC6fxQS0sQngkbFZ6h+0uTafsRqu+eSLIugf6Yb0Ea0SUuRr42Nk9g==}
+    deprecated: This is a stub types definition. ioredis provides its own type definitions, so you do not need this installed.
 
   '@types/jquery@3.5.14':
     resolution: {integrity: sha512-X1gtMRMbziVQkErhTQmSe2jFwwENA/Zr+PprCkF63vFq+Yt5PZ4AlKqgmeNlwgn7dhsXEK888eIW2520EpC+xg==}
@@ -4190,10 +4191,6 @@ packages:
   delegates@1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
 
-  denque@1.5.1:
-    resolution: {integrity: sha512-XwE+iZ4D6ZUB7mfYRMb5wByE8L74HCn30FBN7sWnXksWc1LO1bPDl67pBR9o/kC4z/xSNAwkMYcGgqDV3BE3Hw==}
-    engines: {node: '>=0.10'}
-
   denque@2.1.0:
     resolution: {integrity: sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==}
     engines: {node: '>=0.10'}
@@ -4595,6 +4592,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esniff@2.0.1:
@@ -5017,7 +5015,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -5562,12 +5560,8 @@ packages:
     peerDependencies:
       ioredis: 4.x || 5.x
 
-  ioredis@4.28.5:
-    resolution: {integrity: sha512-3GYo0GJtLqgNXj4YhrisLaNNvWSNwSS2wS4OELGfGxH8I69+XfNdnmV1AyN+ZqMh0i7eX+SWjrwFKDBDgfBC1A==}
-    engines: {node: '>=6'}
-
-  ioredis@5.4.1:
-    resolution: {integrity: sha512-2YZsvl7jopIa1gaePkeMtd9rAcSjOOjPtpcLlOeusyO+XH2SK5ZcT+UCrElPP+WVIInh2TzeI4XW9ENaSLVVHA==}
+  ioredis@5.4.2:
+    resolution: {integrity: sha512-0SZXGNGZ+WzISQ67QDyZ2x0+wVxjjUndtD8oSeik/4ajifeiRufed8fCb8QW8VMyi4MXcS+UO1k/0NGhvq1PAg==}
     engines: {node: '>=12.22.0'}
 
   ip-address@9.0.5:
@@ -6212,9 +6206,6 @@ packages:
 
   lodash.escape@4.0.1:
     resolution: {integrity: sha512-nXEOnb/jK9g0DYMr1/Xvq6l5xMD7GDG55+GSYIYmS0G4tBk/hURD4JR9WCavs04t33WmJx9kCyp9vJ+mr4BOUw==}
-
-  lodash.flatten@4.4.0:
-    resolution: {integrity: sha512-C5N2Z3DgnnKr0LOpv/hKCgKdb7ZZwafIrsesve6lmzvZIRZRGaZ/l6Q8+2W7NaT+ZwO3fFlSCzCzrDCFdJfZ4g==}
 
   lodash.flattendeep@4.4.0:
     resolution: {integrity: sha512-uHaJFihxmJcEX3kT4I23ABqKKalJ/zDrDg0lsFtc1h+3uw49SIJ5beyhx5ExVRti3AvKoOJngIj7xz3oylPdWQ==}
@@ -7186,10 +7177,6 @@ packages:
   p-locate@5.0.0:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
-
-  p-map@2.1.0:
-    resolution: {integrity: sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==}
-    engines: {node: '>=6'}
 
   p-map@4.0.0:
     resolution: {integrity: sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==}
@@ -10867,7 +10854,7 @@ snapshots:
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -11487,7 +11474,7 @@ snapshots:
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -11544,7 +11531,7 @@ snapshots:
 
   '@kwsites/file-exists@1.1.1':
     dependencies:
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -12070,9 +12057,11 @@ snapshots:
 
   '@types/http-errors@2.0.4': {}
 
-  '@types/ioredis@4.28.10':
+  '@types/ioredis@5.0.0':
     dependencies:
-      '@types/node': 20.14.11
+      ioredis: 5.4.2
+    transitivePeerDependencies:
+      - supports-color
 
   '@types/jquery@3.5.14':
     dependencies:
@@ -12273,7 +12262,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 7.18.0
       '@typescript-eslint/visitor-keys': 7.18.0
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -12303,7 +12292,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.2.0
       '@typescript-eslint/visitor-keys': 8.2.0
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -13026,7 +13015,7 @@ snapshots:
       cron-parser: 4.9.0
       get-port: 6.1.2
       glob: 8.1.0
-      ioredis: 5.4.1
+      ioredis: 5.4.2
       lodash: 4.17.21
       msgpackr: 1.11.0
       semver: 7.6.3
@@ -13810,8 +13799,6 @@ snapshots:
   delayed-stream@1.0.0: {}
 
   delegates@1.0.0: {}
-
-  denque@1.5.1: {}
 
   denque@2.1.0: {}
 
@@ -15008,6 +14995,10 @@ snapshots:
     optionalDependencies:
       debug: 4.3.6(supports-color@5.5.0)
 
+  follow-redirects@1.15.6(debug@4.3.7):
+    optionalDependencies:
+      debug: 4.3.7
+
   fontawesome-subset@4.4.0(@fortawesome/fontawesome-free@5.15.4):
     dependencies:
       lodash: 4.17.21
@@ -15807,31 +15798,15 @@ snapshots:
 
   invert-kv@1.0.0: {}
 
-  ioredis-mock@7.4.0(ioredis@4.28.5):
+  ioredis-mock@7.4.0(ioredis@5.4.2):
     dependencies:
       fengari: 0.1.4
       fengari-interop: 0.1.3(fengari@0.1.4)
-      ioredis: 4.28.5
+      ioredis: 5.4.2
       redis-commands: 1.7.0
       standard-as-callback: 2.1.0
 
-  ioredis@4.28.5:
-    dependencies:
-      cluster-key-slot: 1.1.2
-      debug: 4.3.6(supports-color@5.5.0)
-      denque: 1.5.1
-      lodash.defaults: 4.2.0
-      lodash.flatten: 4.4.0
-      lodash.isarguments: 3.1.0
-      p-map: 2.1.0
-      redis-commands: 1.7.0
-      redis-errors: 1.2.0
-      redis-parser: 3.0.0
-      standard-as-callback: 2.1.0
-    transitivePeerDependencies:
-      - supports-color
-
-  ioredis@5.4.1:
+  ioredis@5.4.2:
     dependencies:
       '@ioredis/commands': 1.2.0
       cluster-key-slot: 1.1.2
@@ -16481,8 +16456,6 @@ snapshots:
   lodash.defaults@4.2.0: {}
 
   lodash.escape@4.0.1: {}
-
-  lodash.flatten@4.4.0: {}
 
   lodash.flattendeep@4.4.0: {}
 
@@ -17203,9 +17176,9 @@ snapshots:
     dependencies:
       async-mutex: 0.4.1
       camelcase: 6.3.0
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
       find-cache-dir: 3.3.2
-      follow-redirects: 1.15.6(debug@4.3.6)
+      follow-redirects: 1.15.6(debug@4.3.7)
       https-proxy-agent: 7.0.5
       mongodb: 5.9.2
       new-find-package-json: 2.0.0
@@ -17335,7 +17308,7 @@ snapshots:
 
   new-find-package-json@2.0.0:
     dependencies:
-      debug: 4.3.6(supports-color@5.5.0)
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -17708,8 +17681,6 @@ snapshots:
   p-locate@5.0.0:
     dependencies:
       p-limit: 3.1.0
-
-  p-map@2.1.0: {}
 
   p-map@4.0.0:
     dependencies:
